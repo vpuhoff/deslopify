@@ -36,7 +36,7 @@ _load_dotenv()
 
 @dataclass(slots=True)
 class DeslopConfig:
-    """Настройки пайплайна de-slop."""
+    """Настройки пайплайна deslopify."""
 
     model: str = DEFAULT_MODEL
     api_key: str | None = field(default_factory=lambda: os.getenv("OPENROUTER_API_KEY"))

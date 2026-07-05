@@ -41,7 +41,7 @@ def _build_agent(config: DeslopConfig) -> Agent[None, object]:
 
 
 def build_editor_agent(config: DeslopConfig | None = None) -> Agent[None, object]:
-    """Базовый редакторский агент с system prompt de-slop."""
+    """Базовый редакторский агент с системным промптом deslopify."""
     return _build_agent(config or DeslopConfig())
 
 

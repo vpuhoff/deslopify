@@ -9,7 +9,7 @@ from deslopify import DeslopConfig, deslop_sync
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="De-slop текста через OpenRouter")
+    parser = argparse.ArgumentParser(description="Удаление следов ИИ-генерации в тексте через OpenRouter")
     parser.add_argument("text", nargs="?", help="Текст для обработки")
     parser.add_argument("--model", default=DeslopConfig().model, help="Модель OpenRouter")
     parser.add_argument("--json", action="store_true", help="Вывести полный JSON-результат")
